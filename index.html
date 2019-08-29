@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+		#header{
+			width: 100%;
+			height: 100px;
+			background-color: aqua;
+		}
+		#main{
+			width: 75%;
+			height: 700px;
+			float: left;
+			background-color: greenyellow; 
+		}
+		.col{
+			background-color: pink;
+			width: 23%;
+			margin: 1%;
+			height: 100px;
+			float: left;
+			display: inline-block;
+		}
+		#sidebar{
+			width: 25%;
+			height: 700px;
+			float: left;
+			background-color: yellow;
+		}
+		#footer{
+			width: 100%;
+			height: 50px;
+			clear: both;
+			background-color: gray;
+		}
+
+		@media screen and (max-width: 720px){
+			.col{
+				width: 98%;
+			}
+			#main{
+				width: 100%;
+			}
+			#sidebar{
+				width: 100%;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="main">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
+	<div id="sidebar"></div>
+	<div id="footer"></div>
+</body>
+</html>
